@@ -113,6 +113,10 @@ Now is your turn and you're given two choices:
 
 Which one do you choose and why? 
 
+The assumptions that are not mentioned is that your objective is to survive the game 
+as well as that spinning the revolver gives us a completely random result not influenced 
+by the weight of the bullets or anything else. The revolver never gets jammed and never misses.
+
 
 ##### Answer:
 
