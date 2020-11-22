@@ -28,25 +28,28 @@ Since P(2h) = P(2t) --->  2P(2h) = 1 - 2/8 --> P(2h) = 3/8
 
 Your company is running a test that is designed to compare two different versions of the company’s website.
 
-Version A of the website is shown to 60% of users, while version B of the website is shown to the remaining 40%. 
-The test shows that 8% of users who are presented with version A sign up for the company’s services, 
-as compared to 4% of users who are presented with version B.
+Version A of the website is shown to 65% of users, while version B of the website is shown to the remaining 35%.
+ 
+The test shows that 9% of users who are presented with version A sign up for the company's services, 
+as compared to 5% of users who are presented with version B.
 
-If a user signs up for the company’s services, what is the probability that she/he was presented with version A of the website?
+If a user signs up for the company’s services, what is the probability that she/he was presented 
+with the version A of the website?
 
 ##### Answer:
 
 |   | A  |  B |
 |---|---|---|
-| Users  | 0.6  | 0.4  |
-|  Conversion | 0.08  | 0.04  |
+| Users  | 0.65  | 0.35  |
+|  Conversion | 0.09  | 0.05  |
 
 The probability of a user signing up and visiting a specific version is calculated by multiplying the chance of that site appearing by its conversion ratio.
 
 P(vA|signup) = P(signup|vA) P(vA)  /  P(signup)
+
 P(vA|signup) = P(signup intersecting vA) /  P(signup)
 
-P = (0.6 * 0.08) / ( (0.6*0.08) + (0.4*0.04)) = 0.75
+P = (0.65 * 0.09) / ( (0.65*0.09) + (0.35*0.05)) = 0.77
 
 
 
@@ -54,8 +57,10 @@ P = (0.6 * 0.08) / ( (0.6*0.08) + (0.4*0.04)) = 0.75
 
 (Data Science > Probability)
 
-Alice has 2 kids. We know that one of them is girl. What is the probability the other kid is also a girl?
-Assume there are equal probability of girl and boy.
+Marie has 2 kids and we know that one of them is a girl. 
+What is the probability the other kid is also a girl?
+
+Assume there is equal probability of getting a girl and a boy.
 
 1. 0.5
 2. 0.25
@@ -66,7 +71,9 @@ Assume there are equal probability of girl and boy.
 This can be resolved two ways. With boy:b and girl:g
 - With the full cases: we can have... bb, bg, gb and gg but as we already know one is a girl we are left with three cases, bg, gb, and gg from which only one case has another girl, so 1/3
 
-- Using Bayes' Theorem: P(having 2g | having at least 1) = P(having at least 1 | having 2g) P(having 2g) / P(having at least 1) = 1 * 0.25 / 0.75 = 1/3
+- Using Bayes' Theorem: P(having 2g | having at least 1) = 
+P(having at least 1 | having 2g) P(having 2g) / P(having at least 1) 
+= 1 * 0.25 / 0.75 = 1/3
 
 It is worth mentioning the [Boy or Girl paradox](https://en.wikipedia.org/wiki/Boy_or_Girl_paradox). If we fix the known girl as the older, then the answer of the probability of the second being also girl would be 0.5
 
@@ -99,13 +106,13 @@ Looking at it in different ways...
 
 
 
-### 5. Revolver with two bullets
+### 5. Russian Roulette
 
 (Data Science > Probability)
 
 You are playing a version of the Russian roulette where the revolver has two consecutive bullets.
-Your opponent puts the two consecutive bullets in two chambers of the 6 available in the revolver.
-Then he puts the revolver in his head, pulls the trigger and survive.
+Your opponent puts the two consecutive bullets in the chambers of the revolver. The revolver has six chambers.
+Then he puts the revolver in his head, pulls the trigger and survives.
 
 Now is your turn and you're given two choices:
 - Put the gun straight to your head and pull the trigger
@@ -113,9 +120,10 @@ Now is your turn and you're given two choices:
 
 Which one do you choose and why? 
 
-The assumptions that are not mentioned is that your objective is to survive the game 
-as well as that spinning the revolver gives us a completely random result not influenced 
-by the weight of the bullets or anything else. The revolver never gets jammed and never misses.
+The assumptions that are not mentioned in the previous points are: 
+- Your objective is to survive the game.
+- Spinning the revolver gives us a completely random result not influenced by the weight of the bullets or anything else. 
+- The revolver never gets jammed and never misses.
 
 
 ##### Answer:
@@ -133,7 +141,7 @@ The possibilities for the position of the bullets (B) are as shown in the table:
 
 But it doesn't matter. Let's take any of the possibilities:  x | B | B | x | x | x
 
-The main point here to be aware off is the fact that when the opponent 
+The main point here is to be aware of the fact that when the opponent 
 pulls the trigger and it didn't fire, there are 4 positions or possibilities in which the 
 revolver may have been.
 
@@ -152,7 +160,7 @@ So I wouldn't spin the cylinder if I were you...
 
 
 
-### 6. Revolver variation
+### 6. Russian Roulette Variation
 
 (Data Science > Probability)
 
