@@ -33,13 +33,13 @@ def desired_marketing_expenditure(marketing_expenditure, units_sold, desired_uni
 
 def test_desired_marketing_expenditure():
     data_marketing_expenditure = [300000, 200000, 400000, 300000, 100000]
-    data_units_solf = [60000, 50000, 90000, 80000, 30000]
+    data_units_sold = [60000, 50000, 90000, 80000, 30000]
     desired_units_sold = 60000
     expected_expenditure = 250000
 
     predicted_expenditure = round(desired_marketing_expenditure(
         data_marketing_expenditure,
-        data_units_solf,
+        data_units_sold,
         desired_units_sold))
     print(predicted_expenditure)
 

@@ -93,7 +93,7 @@ If you have initially 1000 kg of forest fruits which are 99% water but a week la
 due to the evaporation process. What is now the mass of the forest fruits?
 
 1. 980
-2. 989.89
+2. 990
 3. 500
 4. 490
 
