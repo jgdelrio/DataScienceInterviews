@@ -1,13 +1,12 @@
 # Marketing Costs
 #
-# Implement the 'desired_marketing_expenditure' function, which returns the required amount of money
+# 1) Use the data from previous marketing campaigns to evaluate how the number of units sold grows
+# linearly as the amount of money invested increases and build a model that captures that knowledge.
+#
+# 2) Implement a function 'desired_marketing_expenditure', which returns the required amount of money
 # that needs to be invested in a new marketing campaign to sell the desired number of units.
-#
-# Use the data from previous marketing campaigns to evaluate how the number of units sold grows
-# linearly as the amount of money invested increases.
-#
-# For example, for the desired number of 60,000 units sold and previous campaign
-# data from the table below, the function should return the float 250,000.
+# We recommend reusing the previous model. For the desired number of 60,000 units sold
+# the expenditure in marketing should be 250,000.
 
 
 # Data
