@@ -298,3 +298,38 @@ On the other hand, PCA (Principal Component Analysis) identifies the hyper-plane
 And the trained models will behave in a deterministic way in the prediction stage, providing always the same answer for the same inputs.
 
 
+
+### 14. Explain the difference between ensembles and boosting. And what is gradient boosting?
+
+An ensemble is a combination of simple individual models that together create a more powerful model.
+
+Boosting on the other hand is a method for creating an ensemble. It fits an initial model to the data.
+Then a 2nd model is built focusing on predicting the cases where the first model performs poorly and the 
+combination of these two models is expected to be better than either model alone. This process can be 
+repeated as many times as required.
+
+And finally Gradient Boosting is a type of boosting that relies on the intuition that the best possible next model, 
+when combined with previous models, minimizes the overall prediction error.
+The way we calculate the target outcome for each case in the data depends on how much changing 
+that case's prediction impacts the overall prediction error:
+- If a small change in the prediction for a case causes a large drop in error, then next target outcome of the case is a high value. Predictions from the new model that are close to its targets will reduce the error.
+If a small change in the prediction for a case causes no change in error, then next target outcome of the case is zero. Changing this prediction does not decrease the error.
+
+
+
+### 15. What is the difference between bagging and boosting?
+
+The main purpose of ensemble models is to group a set of weak learners and form a strong learner. 
+This is done in 2 main techniques: Bagging and Boosting
+ 
+They work differently and are used interchangeably for obtaining better outcomes with high precision and accuracy and fewer errors. 
+With ensemble methods, multiple models are brought together to produce a powerful model.
+
+First, the base models are needed to set up an ensemble learning method that will be clustered afterward. 
+In the Bagging and Boosting algorithms, a single base learning algorithm is used. 
+The reason behind this is that we will have homogeneous weak learners at hand.
+
+1. Bagging is a homogeneous weak learners’ model that learns from each other independently in parallel 
+and combines them for determining the model average.
+2. Boosting is also a homogeneous weak learners’ model but learners learn sequentially and adaptively 
+to improve model predictions of a learning algorithm.
