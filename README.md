@@ -69,6 +69,7 @@ The following sections show some examples of questions & answers:
 5. [Marketing Cost](./DataScience/marketing_costs.py)
 6. [Stock Prices](./DataScience/stock_prices.py)
 7. [Class grades](./DataScience/class_grades.py)
+8. [Cosine Similarity](./DataScience/cosine_similarity.py)
 
 
 

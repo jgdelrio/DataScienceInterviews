@@ -1,12 +1,14 @@
-# Dog Classification
-# (General Data Science > Classification > Decision Boundary)
-#
-# The first column contains information if the dog is in the image or not.
-# The second column contains the classifier prediction, which is in the interval 0-100,
-# with higher values meaning that the classifier is more confident that image contains a dog.
-#
-# What is the value of the decision boundary that will maximize the accuracy of the model?
-# Values greater than or equal to the decision boundary will be treated as positive.
+"""
+Dog Classification
+(General Data Science > Classification > Decision Boundary)
+
+The first column contains information if the dog is in the image or not.
+The second column contains the classifier prediction, which is in the interval 0-100,
+with higher values meaning that the classifier is more confident that image contains a dog.
+
+What is the value of the decision boundary that will maximize the accuracy of the model?
+Values greater than or equal to the decision boundary will be treated as positive.
+"""
 
 
 import numpy as np
