@@ -82,3 +82,9 @@ The following sections show some examples of questions & answers:
     - Double the average speed
     - Thought process
     - Four liters
+    
+    
+## Statistics
+
+1 [Statistics questions](Statistics/Statistics.md)
+
