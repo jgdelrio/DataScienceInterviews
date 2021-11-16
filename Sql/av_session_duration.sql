@@ -10,7 +10,7 @@
     duration DECIMAL NOT NULL
 */
 
-SELECT userId, avg(duration)
+SELECT userId, avg(duration) as avg_duration
 FROM sessions
 GROUP BY userid
 HAVING COUNT(*) > 1
