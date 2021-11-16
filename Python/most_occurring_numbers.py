@@ -1,10 +1,12 @@
 """
-Given a file that contains a list of numbers (one per line) write a program to print out
-the 5 most commonly occurring numbers, one per line, without whitespaces and in descending order of frequency.
+Given a file that contains a list of numbers (one per line) write a program with a function
+called get_top_n to print out the 5 most commonly occurring numbers, one per line,
+without whitespaces and in descending order of frequency.
 """
 
 import sys
 from pandas import read_csv
+from collections import Counter
 
 
 def get_top_n(filename, n=5):
@@ -13,6 +15,10 @@ def get_top_n(filename, n=5):
 
     # Select top n and print it
     topn = data.iloc[:, 0].value_counts().index[:n]
+
+    # Other possibility (Counter)
+    topn = Counter
+
     print('\n'.join(map(str, topn)))
 
 
