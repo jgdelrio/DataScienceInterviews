@@ -139,9 +139,9 @@ Suppose f(x) has a global minimum at x=x<sup>*</sup>. Which of the following mus
 4. f''(x) > 0
 
 ##### Answer:
-f'(x\*) = 0 is true, but it is also true for any local maximum or minimum. And we don't know if f' is defined at that point.
+f'(x*) = 0 is true, but it is also true for any local maximum or minimum. And we don't know if f' is defined at that point.
 
-It can be a global minimum but the definition of global minimum is f(x\*) <= f(x) so it is not necessarily unique.
+It can be a global minimum but the definition of global minimum is f(x*) <= f(x) so it is not necessarily unique.
 
 f(y) >= f(x\*) for all y (where f(y) is defined) is the definition of global minimum.
 
