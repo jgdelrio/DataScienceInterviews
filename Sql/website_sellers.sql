@@ -1,6 +1,6 @@
 /*
   Imagine that you manage a website like ebay
-  where we well multiple items bolonging to multiple sellers.
+  where we sell multiple items belonging to multiple sellers.
   Each item belongs to a seller and we want to track the quality of the seller.
   To that purpose each seller has a rating and we have the two following tables:
 
